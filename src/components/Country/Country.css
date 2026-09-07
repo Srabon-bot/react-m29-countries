@@ -1,0 +1,18 @@
+.country{
+    border: 2px solid transparent;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-items: center;
+    padding: 15px;
+    background-color: antiquewhite; 
+}
+
+.country img{
+    max-width: 100%;
+    max-height: 120px; 
+    object-fit: contain;
+}
