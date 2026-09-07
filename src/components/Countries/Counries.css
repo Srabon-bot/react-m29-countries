@@ -1,5 +1,43 @@
-.countries{
+.countries {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    gap: 20px;
+    padding: 16px 0;
+}
+
+.visitedCountryFlags img {
+    max-width: 100%;
+    max-height: 120px;
+    object-fit: contain;
+    margin: 5px;
+    border: 1px solid #3c3489;
+    border-radius: 4px;
+}
+
+.stats {
+    display: flex;
+    width: 100%;
+}
+
+.stat-card {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    background-color: #1e1c2b;
+    border: 1px solid #3c3489;
+}
+
+.stat-card:first-child {
+    border-right: none;
+    border-radius: 12px 0 0 12px;
+}
+
+.stat-card:last-child {
+    border-radius: 0 12px 12px 0;
+}
+
+.stat-card h2,
+.stat-card h4 {
+    color: #eeedfe;
+    margin: 0;
 }

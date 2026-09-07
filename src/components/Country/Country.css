@@ -1,22 +1,31 @@
-.country{
-    border: 2px solid transparent;
-    border-radius: 10px;
-    margin: 10px;
+.country {
+    border: 1px solid #3c3489;
+    border-radius: 12px;
     display: flex;
     flex-direction: column;
     gap: 15px;
+    padding: 16px;
     align-items: center;
     justify-items: center;
-    padding: 15px;
-    background-color: antiquewhite; 
+    background-color: #1e1c2b;
+    color: #c2c0d6;
 }
 
-.visitedCountry{
-    background-color: rgb(197, 192, 184);
+.visitedCountry {
+    background-color: #26215c;
+    border-color: #7f77dd;
 }
 
-.country img{
+.visitedCountry button {
+    background-color: #7f77dd;
+    color: #26215c;
+    border-color: #eeedfe;
+}
+
+.country img {
     max-width: 100%;
-    max-height: 120px; 
+    max-height: 120px;
     object-fit: contain;
+    border: 1px solid #3c3489;
+    border-radius: 4px;
 }

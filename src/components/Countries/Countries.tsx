@@ -29,8 +29,21 @@ export default function Countries({ countriesPromise }: CountriesProps) {
 
     return (
         <div>
-            <h2>Countries: {countries.length}</h2>
-            <h4>Visited countries: {visitedCountries.length}</h4>
+            <div className="stats">
+                <div className="stat-card">
+                    <h2>Countries: {countries.length}</h2>
+                </div>
+                <div className="stat-card">
+                    <h2>Visited countries: {visitedCountries.length}</h2>
+                </div>
+            </div>
+            <div className="visitedCountryFlags">
+                {
+                    visitedCountries.map(country =>
+                        <img src={country.flags.flags.png}
+                            alt="Visited country flag"></img>)
+                }
+            </div>
             <div className="countries">
                 {
                     countries.map(country => <Country
