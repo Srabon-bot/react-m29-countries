@@ -28,7 +28,7 @@ const Country = ({ country, handleVisitedCountries }: CountryProps) => {
                 <p>Capital: {country.capital.capital}</p>
                 <p>
                     Currencies: {Object.entries(country.currencies.currencies)
-                        .map(([code, currency]) => `${currency.name} (${currency.symbol})`)
+                        .map(([code, currency]) => `${code}: ${currency.name} (${currency.symbol})`)
                         .join(", ")}
                 </p>
                 <p>Population: {country.population.population}</p>
