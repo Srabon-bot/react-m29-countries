@@ -1,14 +1,21 @@
+import { useState } from "react";
 import type { CountryType } from "../../types";
 import './Country.css';
 
 export interface CountryProps {
-    country: CountryType
+    country: CountryType;
 }
 
 const Country = ({ country }: CountryProps) => {
 
+    const [Visited, setVisited] = useState<boolean>(false);
+
+    const handleVisited =()=>{
+        setVisited(!Visited);
+    };
+
     return (
-        <div className="country">
+        <div className={`country ${Visited ?'visitedCountry':''}`}>
             <h3>
                 {country.name.common}
             </h3>
@@ -24,7 +31,9 @@ const Country = ({ country }: CountryProps) => {
                 </p>
                 <p>Population: {country.population.population}</p>
             </article>
-            <button>Visited</button>
+            <button onClick={handleVisited}>
+                {Visited? 'Visited' : 'Mark as visited'}
+            </button>
         </div>
     )
 }

@@ -11,6 +11,10 @@
     background-color: antiquewhite; 
 }
 
+.visitedCountry{
+    background-color: rgb(197, 192, 184);
+}
+
 .country img{
     max-width: 100%;
     max-height: 120px; 
