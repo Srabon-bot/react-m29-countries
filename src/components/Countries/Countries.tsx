@@ -40,7 +40,7 @@ export default function Countries({ countriesPromise }: CountriesProps) {
             <div className="visitedCountryFlags">
                 {
                     visitedCountries.map(country =>
-                        <img src={country.flags.flags.png}
+                        <img key={country.ccn3.ccn3} src={country.flags.flags.png}
                             alt="Visited country flag"></img>)
                 }
             </div>
